@@ -1,0 +1,1 @@
+cat startup.sql | sqlite3 cards
