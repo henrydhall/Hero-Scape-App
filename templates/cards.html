@@ -6,6 +6,32 @@
 {% block page_content %}
 <div class="page-header">
     <h1>Cards</h1>
+    <h2>Raw Cards</h2>
     <p>{{cards}}</p>
+    <h2>Cards Table</h2>
+    <table id = "data" class = "table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Template</th>
+                <th>Life</th>
+                <th>Move</th>
+                <th>Range</th>
+                <th>Attack</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for card in cards %}
+                <tr>
+                    <td>{{ card[1] }}</td>
+                    <td>{{ card[2] }}</td>
+                    <td>{{ card[3] }}</td>
+                    <td>{{ card[4] }}</td>
+                    <td>{{ card[5] }}</td>
+                    <td>{{ card[6] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
 {% endblock %}

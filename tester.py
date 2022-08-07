@@ -11,10 +11,6 @@ app.config['SECRET_KEY'] = 'hard string to guess'
 
 bootstrap = Bootstrap(app)
 
-class NameForm(FlaskForm):
-    name = StringField('What is your name?', validators=[DataRequired()])
-    submit = SubmitField('Submit')
-
 @app.errorhandler(404)
 def page_not_found(e):
 	return render_template('404.html'), 404
@@ -22,11 +18,7 @@ def page_not_found(e):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     name = None
-    form = NameForm()
-    if form.validate_on_submit():
-        name = form.name.data
-        form.name.data = ''
-    return render_template('index.html', form=form, name=name)
+    return render_template('index.html' )
 
 @app.route('/cards')
 def cards():
