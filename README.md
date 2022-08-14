@@ -50,7 +50,7 @@ Now that I've made a bare minimum table of their attributes we can move ahead, I
 TODO: make sortable, searchable.
 
 ### Adding Cards From Web App
-This is a really tricky part, that I don't know how I want to handle. We're adding many different types of input that then need to be added to the database. I'll start backend and work forward.
+This is a really tricky part, that I don't know how I want to handle. We're adding many different types of input that then need to be added to the database. I'll start backend and work forward. First I build a function to talk to the database and add the cards, then made a form in the flask file to get the information we need, then got it working, did some adjusting to make the input work for the SQLite query, and there ya go!
 
 ## Dependencies
 TODO: make a depencies file after making a virtual environment so that it's easy to get up and running.
@@ -60,4 +60,4 @@ TODO: make a depencies file after making a virtual environment so that it's easy
 * SQLite 3 Built in Functions - https://www.sqlite.org/lang_corefunc.html
 * Flask Web Development 2nd Edition - Grinberg
 * Beautiful Interactive Tables for your Flask Templates - https://blog.miguelgrinberg.com/post/beautiful-interactive-tables-for-your-flask-templates
-* Why and How to make a Requirements.txt - Boscacci
+* Why and How to make a Requirements.txt - Boscacci - https://boscacci.medium.com/why-and-how-to-make-a-requirements-txt-f329c685181e
