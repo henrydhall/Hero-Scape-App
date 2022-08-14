@@ -53,7 +53,7 @@ TODO: make sortable, searchable.
 This is a really tricky part, that I don't know how I want to handle. We're adding many different types of input that then need to be added to the database. I'll start backend and work forward. First I build a function to talk to the database and add the cards, then made a form in the flask file to get the information we need, then got it working, did some adjusting to make the input work for the SQLite query, and there ya go!
 
 ## Dependencies
-TODO: make a depencies file after making a virtual environment so that it's easy to get up and running.
+In requirements.txt please let me know if there is anything missing, my virtual environment was being weird.
 
 ## References
 * Learning SQL 3rd Edition - Beaulieu
