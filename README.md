@@ -54,8 +54,11 @@ This is a really tricky part, that I don't know how I want to handle. We're addi
 
 ## Dependencies
 In requirements.txt please let me know if there is anything missing, my virtual environment was being weird.
+
 I'm using python3 in Ubuntu.
+
 To quickly install the dependencies just navigate to the directory the requirements.txt file is and use this command.
+
   pip3 install -r requirements.txt
 
 ## References
