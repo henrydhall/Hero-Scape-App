@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}HSCO{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Add Card</h1>
+    <h2>{% if card_name %} Added {{ card_name }} {% else %}Enter Card Info{% endif %}</h2>
+</div>
+{{ wtf.quick_form(form) }}
+{% endblock %}
