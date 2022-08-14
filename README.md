@@ -59,7 +59,7 @@ I'm using python3 in Ubuntu.
 
 To quickly install the dependencies just navigate to the directory the requirements.txt file is and use this command.
 
-  pip3 install -r requirements.txt
+    pip3 install -r requirements.txt
 
 ## References
 * Learning SQL 3rd Edition - Beaulieu
