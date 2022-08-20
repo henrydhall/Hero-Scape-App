@@ -61,6 +61,23 @@ To quickly install the dependencies just navigate to the directory the requireme
 
     pip3 install -r requirements.txt
 
+## Running On Your Computer
+Install dependencies by running 
+
+    pip3 install -r requirements.txt
+
+Run the setup.sh file.
+    
+    bash setup.sh
+
+Run the run.sh file.
+
+    bash run.sh
+
+Enter http://127.0.0.1:5000/ in your browsers url.
+
+There you go!
+
 ## References
 * Learning SQL 3rd Edition - Beaulieu
 * SQLite 3 Built in Functions - https://www.sqlite.org/lang_corefunc.html
