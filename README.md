@@ -33,6 +33,8 @@ Additional Columns
 * Notes: SMALLTEXT
 * RowID: primary key
 
+TODO: add jpg columns.
+
 ### Initializing
 Use the sqlite3 command line by running the setup.sh bash file. This will create the database. And seed it with three cards.
 
@@ -43,14 +45,14 @@ I decided not to use SQL-Alchemy or whatever because I had already built a pytho
 I started just by stealing some code from flasky, and expanding from there. I won't be worrying about users or anything until I actually try to deploy it, and I don't know that I ever will so this might just stay as proof of concept. 
 
 ### Displaying Cards
-First I need to find a good way to display cards. I made a cards tab in the menu, so we'll go from there. I started reading up on how to make cool tables, and then got overwhelmed, but I'll start at the most basic level haha. 
+I have a full cards page and a briefer view that is the new default. I also made individual card pages so that you can see all of the information together for the card.
 
-Now that I've made a bare minimum table of their attributes we can move ahead, I'll add some TODO's to this section.
+TODO: finish cleanup?
 
 TODO: make sortable, searchable.
 
 ### Adding Cards From Web App
-This is a really tricky part, that I don't know how I want to handle. We're adding many different types of input that then need to be added to the database. I'll start backend and work forward. First I build a function to talk to the database and add the cards, then made a form in the flask file to get the information we need, then got it working, did some adjusting to make the input work for the SQLite query, and there ya go!
+This was easier than I expected. Even though we're adding many different types of input that then need to be added to the database, just using the form filters solves most of our problems. I'll start backend and work forward. First I built a function to talk to the database and add the cards, then made a form in the flask file to get the information we need, then got it working, did some adjusting to make the input work for the SQLite query, and there ya go!
 
 ## Dependencies
 In requirements.txt please let me know if there is anything missing, my virtual environment was being weird.

@@ -72,10 +72,12 @@ def add_many_cards():
 
 def add_card(card_name, card_template, card_life, card_movement, card_range, card_attack, card_defense, \
         card_points, card_powers, card_species, card_uniqueness, card_squad_number, card_class, \
-            card_personality, card_size_text, card_size_int, card_notes):
-    # We have a ton of inputs, but we just need them.
-    # TODO: verify inputs (either here or in the front end
+        card_personality, card_size_text, card_size_int, card_notes):
     # TODO: consider SQL Injection attack?
+
+    if card_uniqueness == True:
+        card_squad_number = 1
+
     connection = sqlite3.connect('cards')
     try:
         cursor = connection.cursor()
@@ -92,6 +94,22 @@ def add_card(card_name, card_template, card_life, card_movement, card_range, car
     finally:
         connection.close()
     pass
+
+def search_cards_by_key(key):
+    connection = sqlite3.connect('cards')
+    results = None
+    try:
+        cursor = connection.cursor()
+        cursor.execute(f'SELECT * FROM all_cards WHERE id = {key};')
+        results = cursor.fetchall()
+    except sqlite3.Error:
+        connection.rollback()
+        raise
+    else:
+        connection.commit()
+    finally:
+        connection.close()
+    return results
 
 if __name__ == '__main__':
     add_many_cards()
